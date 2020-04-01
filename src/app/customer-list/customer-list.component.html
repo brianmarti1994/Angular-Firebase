@@ -1,0 +1,22 @@
+
+<table class="table table-sm">
+    <thead>
+      <th>Full Name</th>
+      <th>Email</th>
+      <th>Mobile</th>
+      <th></th>
+    </thead>
+    <ng-container *ngFor="let customer of customerArray">
+      <tr class="table-dark">
+        <!-- <tr class="table-dark" *ngIf="filterCondition(customer)"> -->
+          <!-- <td>{{customer.$key}}</td> -->
+        <td>{{customer.fullname}}</td>
+        <td>{{customer.email}}</td>
+          <td>{{customer.mobile}}</td>
+          <td>
+            <button class="btn btn-outline-info" (click)="Customerservice.populateForm(customer)">Edit</button>
+            <button class="btn btn-outline-danger" (click)="onDelete(customer.$key)">Delete</button>
+          </td>
+      </tr>
+    </ng-container>
+  </table>
