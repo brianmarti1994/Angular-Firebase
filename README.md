@@ -1,3 +1,3 @@
-## CRUD with Angular Firebase
+## CRUD with Angular and Firebase
 
 
